@@ -1,0 +1,7 @@
+set terminal png
+set output "measlessvta2.png"
+set nokey
+set title "Plot of Number of Susceptibles versus Time"
+set xlabel "Time"
+set ylabel "Number of Susceptibles"
+plot [0:120][0:1000] "measles.dat" u 1:2 w l

@@ -1,0 +1,7 @@
+set terminal png
+set output "groupprojq2rvt.png"
+set nokey
+set title "Plot of Number of Removed versus Time"
+set xlabel "time"
+set ylabel "Number of Removed"
+plot [0:12][0:10000] "groupprojq2.dat" u 1:4 w l

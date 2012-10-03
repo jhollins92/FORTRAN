@@ -1,0 +1,7 @@
+set terminal png
+set output "groupprojq2ivs.png"
+set nokey
+set title "Plot of Number of Infected versus Number of Susceptibles"
+set xlabel "Number of Susceptibles"
+set ylabel "Number of Infected" 
+plot [0:10000][0:10000] "groupprojq2.dat" u 2:3 w l

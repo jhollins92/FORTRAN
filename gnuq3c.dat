@@ -1,0 +1,7 @@
+set terminal png
+set output "plaguervt.png"
+set nokey
+set title "Plot of Number of Removed versus Time"
+set xlabel "Time"
+set ylabel "Number of Removed"
+plot [0:3][0:300] "plague.dat" u 1:4 w l, "realplague.dat" u 1:4 w l

@@ -1,0 +1,7 @@
+set terminal png
+set output "measlesrvtb_0.95_long.png"
+set nokey
+set title "Plot of Number of Removed Individuals versus Time"
+set xlabel "Time"
+set ylabel "Number of Removed Individuals"
+plot [0:120][0:1000] "measles4.dat" u 1:4 w l

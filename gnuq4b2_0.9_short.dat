@@ -1,0 +1,7 @@
+set terminal png
+set output "measlesivtb_0.9_short.png"
+set nokey
+set title "Plot of Number of Infetcted Individuals versus Time"
+set xlabel "Time"
+set ylabel "Number of Infected Individuals"
+plot [0:2][0:1000] "measles3.dat" u 1:3 w l

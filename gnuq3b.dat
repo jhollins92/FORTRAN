@@ -1,0 +1,7 @@
+set terminal png
+set output "plagueivt.png"
+set nokey
+set title "Plot of Number of Infected versus Time"
+set xlabel "Time"
+set ylabel "Number of Infected"
+plot [0:3][0:300] "plague.dat" u 1:3 w l, "realplague.dat" u 1:3 w l

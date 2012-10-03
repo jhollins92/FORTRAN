@@ -1,0 +1,7 @@
+set terminal png
+set output "groupprojq2ivt.png"
+set nokey
+set title "Plot of Number of Infected versus Time"
+set xlabel "time"
+set ylabel "Number of Infected"
+plot [0:12][0:10000] "groupprojq2.dat" u 1:3 w l
